@@ -5,7 +5,7 @@ import Student from './Student';
 
 const ListQuotes = () => {
 
-    // this is my original state with an array of students 
+    // this is my original state with an array of quotes
     const [quotes, setQuotes] = useState([]);
 
     //this is the state needed for the UpdateRequest
