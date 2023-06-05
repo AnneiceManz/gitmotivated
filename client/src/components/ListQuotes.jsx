@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as ioicons from "react-icons/io5";
-import { Card } from "semantic-ui-react";
+import { Card, Image } from "semantic-ui-react";
 
 const ListQuotes = () => {
   // this is my original state with an array of quotes
@@ -22,16 +22,17 @@ const ListQuotes = () => {
   return (
       <div className="list-students">
         <h2>Quote of the Day </h2>
-        <Card centered>
           {quotes.map((quote) => {
             return (
+              <Card centered>
+                <Image src={quote.i} wrapped ui={false} />
               <Card.Content key={quote.q}>
                 <Card.Description>{`"${quote.q}"`}</Card.Description>
                 <Card.Meta>{quote.a}</Card.Meta>
               </Card.Content>
+        </Card>
             );
           })}
-        </Card>
       </div>
   );
 };
