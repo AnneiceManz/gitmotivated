@@ -3,11 +3,11 @@ const cors = require("cors");
 require("dotenv").config();
 const path = require("path");
 const axios = require("axios");
-
 const app = express();
 const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(express.json());
+const API_KEY = process.env.API_KEY;
 
 // creates an endpoint for the route "/""
 app.get("/", (req, res) => {
@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 // create the get request for students in the endpoint '/api/students'
 app.get("/api/quotes", async (req, res) => {
   try {
-    axios.get("https://zenquotes.io/api/quotes/").then((response) => {
+    axios.get(`https://zenquotes.io/api/random/${API_KEY}`).then((response) => {
       console.log("response.data: ", response.data);
       let result = response.data;
       res.send(result);
