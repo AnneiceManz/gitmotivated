@@ -23,6 +23,11 @@
     100%{background-position:0% 77%}
 }
 
+.navbar {
+  border: 5px solid #a27b8a;
+  border-radius: 10px;
+}
+
 a.navbar-brand {
   margin-inline-start: -2em;
 }

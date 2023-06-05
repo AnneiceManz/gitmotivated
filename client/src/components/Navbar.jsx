@@ -8,7 +8,7 @@ function MyNavBar(props) {
 
   return (
     <>
-    <Navbar bg="light" variant="light" sticky="top">
+    <Navbar bg="light" variant="light" sticky="top" className='navbar'>
       <Container>
         <Navbar.Brand href="/">
         <img
