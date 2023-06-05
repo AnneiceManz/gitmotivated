@@ -6,7 +6,7 @@ import Student from './Student';
 const ListQuotes = () => {
 
     // this is my original state with an array of students 
-    const [students, setStudents] = useState([]);
+    const [quotes, setQuotes] = useState([]);
 
     //this is the state needed for the UpdateRequest
     const [editingStudent, setEditingStudent] = useState(null)
