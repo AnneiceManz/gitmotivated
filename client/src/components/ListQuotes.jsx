@@ -20,7 +20,6 @@ const ListQuotes = () => {
   }, []);
 
   return (
-    <div className="mybody">
       <div className="list-students">
         <h2>Quote of the Day </h2>
         <Card centered>
@@ -34,7 +33,6 @@ const ListQuotes = () => {
           })}
         </Card>
       </div>
-    </div>
   );
 };
 

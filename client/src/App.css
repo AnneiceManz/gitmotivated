@@ -4,12 +4,6 @@
   margin: 5px;
 }
 
-.mybody {
-  display: flex;
-  gap: 3em;
-  padding: 1em;
-}
-
 a.navbar-brand {
   margin-inline-start: -5em;
 }
