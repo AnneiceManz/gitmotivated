@@ -30,7 +30,10 @@ const ListQuotes = () => {
             <Card.Content key={quote.q}>
               <Card.Description>
               {`"${quote.q}"`}
-                </Card.Description>  ~${quote.a}`}
+                </Card.Description>
+                <Card.Meta>
+                {quote.a}
+                  </Card.Meta>  
             </Card.Content>
             );
           })}
