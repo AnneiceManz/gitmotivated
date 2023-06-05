@@ -22,7 +22,7 @@ const ListQuotes = () => {
       <div className="list-students">
           {quotes.map((quote) => {
             return (
-              <Card centered>
+              <Card centered fluid raised>
                 <Image  src={quote.i} wrapped ui={false} />
               <Card.Content key={quote.q}>
                 <Card.Description className="quote"><Icon name="quote left"/>{`${quote.q}`}<Icon name="quote right"/></Card.Description>
