@@ -30,5 +30,5 @@ app.get("/api/quotes", async (req, res) => {
 
 // console.log that your server is up and running
 app.listen(PORT, () => {
-  console.log(`Hola, Server listening on ${PORT}`);
+  console.log(`Backend server is running on ${PORT}`);
 });
