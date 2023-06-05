@@ -18,10 +18,13 @@ app.get("/", (req, res) => {
 // create the get request for students in the endpoint '/api/students'
 app.get("/api/quotes", async (req, res) => {
   try {
-    const response = await db.query("SELECT * FROM students");
-    res.send(students);
-  } catch (e) {
-    return res.status(400).json({ e });
+    axios.get("https://zenquotes.io/api/quotes/").then((response) => {
+      console.log("response.data: ", response.data);
+      let result = response.data;
+      res.send(result);
+    });
+  } catch (error) {
+    console.log("error from catch server.js", error);
   }
 });
 
