@@ -8,8 +8,8 @@ const ListQuotes = () => {
     // this is my original state with an array of quotes
     const [quotes, setQuotes] = useState([]);
 
-    //this is the state needed for the UpdateRequest
-    const [editingStudent, setEditingStudent] = useState(null)
+    // //this is the state needed for the UpdateRequest
+    // const [editingStudent, setEditingStudent] = useState(null)
 
     const loadStudents = () => {
         // A function to fetch the list of students that will be load anytime that list change
