@@ -11,8 +11,8 @@ const ListQuotes = () => {
     // //this is the state needed for the UpdateRequest
     // const [editingStudent, setEditingStudent] = useState(null)
 
-    const loadStudents = () => {
-        // A function to fetch the list of students that will be load anytime that list change
+    const loadQuotes = () => {
+        // A function to fetch the list of quotes that will be load anytime that list change
         fetch("http://localhost:8080/api/students")
             .then((response) => response.json())
             .then((students) => {
