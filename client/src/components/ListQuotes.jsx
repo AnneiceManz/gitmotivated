@@ -23,7 +23,7 @@ const ListQuotes = () => {
     <div className="mybody">
       <div className="list-students">
         <h2>Quote of the Day </h2>
-        <Card>
+        <Card centered>
           {quotes.map((quote) => {
             return (
               <Card.Content key={quote.q}>
