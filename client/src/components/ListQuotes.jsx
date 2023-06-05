@@ -20,7 +20,6 @@ const ListQuotes = () => {
 
   return (
       <div className="list-students">
-        <h2>Quote of the Day </h2>
           {quotes.map((quote) => {
             return (
               <Card centered>
