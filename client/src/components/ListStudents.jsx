@@ -13,7 +13,7 @@ const ListQuotes = () => {
 
     const loadQuotes = () => {
         // A function to fetch the list of quotes that will be load anytime that list change
-        fetch("http://localhost:8080/api/students")
+        fetch("http://localhost:8080/api/quotes")
             .then((response) => response.json())
             .then((students) => {
                 setStudents(students);
