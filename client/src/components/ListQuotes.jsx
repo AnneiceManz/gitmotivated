@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import * as ioicons from "react-icons/io5";
-import { Card, Image } from "semantic-ui-react";
+import { Card, Image, Icon } from "semantic-ui-react";
 
 const ListQuotes = () => {
   // this is my original state with an array of quotes
@@ -27,7 +26,7 @@ const ListQuotes = () => {
               <Card centered>
                 <Image  src={quote.i} wrapped ui={false} />
               <Card.Content key={quote.q}>
-                <Card.Description className="quote">{`"${quote.q}"`}</Card.Description>
+                <Card.Description className="quote"><Icon name="quote left"/>{`${quote.q}`}<Icon name="quote right"/></Card.Description>
                 <Card.Meta className="author">{quote.a}</Card.Meta>
               </Card.Content>
         </Card>
