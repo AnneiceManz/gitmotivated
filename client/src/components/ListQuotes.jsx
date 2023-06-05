@@ -27,8 +27,8 @@ const ListQuotes = () => {
               <Card centered>
                 <Image src={quote.i} wrapped ui={false} />
               <Card.Content key={quote.q}>
-                <Card.Description>{`"${quote.q}"`}</Card.Description>
-                <Card.Meta>{quote.a}</Card.Meta>
+                <Card.Description className="quote">{`"${quote.q}"`}</Card.Description>
+                <Card.Meta className="author">{quote.a}</Card.Meta>
               </Card.Content>
         </Card>
             );

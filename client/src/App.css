@@ -19,6 +19,11 @@ a.navbar-brand {
   flex: 1
 }
 
+.quote {
+  font-style: italic;
+  font-size: 2rem;
+}
+
 ul {
   list-style-type: none;
 }
