@@ -3,7 +3,7 @@ import * as ioicons from 'react-icons/io5'
 import MyForm from './Form';
 import Student from './Student';
 
-const ListStudents = () => {
+const ListQuotes = () => {
 
     // this is my original state with an array of students 
     const [students, setStudents] = useState([]);
