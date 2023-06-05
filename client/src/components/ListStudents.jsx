@@ -21,8 +21,8 @@ const ListQuotes = () => {
     }
 
     useEffect(() => {
-        loadStudents();
-    }, [students]);
+        loadQuotes();
+    }, [quotes]);
 
     const onSaveStudent = (newStudent) => {
         //console.log(newStudent, "From the parent - List of Students");
