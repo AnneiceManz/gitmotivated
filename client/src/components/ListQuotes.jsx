@@ -19,7 +19,6 @@ const ListQuotes = () => {
     loadQuotes();
   }, []);
 
-
   return (
     <div className="mybody">
       <div className="list-students">
@@ -27,14 +26,10 @@ const ListQuotes = () => {
         <Card>
           {quotes.map((quote) => {
             return (
-            <Card.Content key={quote.q}>
-              <Card.Description>
-              {`"${quote.q}"`}
-                </Card.Description>
-                <Card.Meta>
-                {quote.a}
-                  </Card.Meta>  
-            </Card.Content>
+              <Card.Content key={quote.q}>
+                <Card.Description>{`"${quote.q}"`}</Card.Description>
+                <Card.Meta>{quote.a}</Card.Meta>
+              </Card.Content>
             );
           })}
         </Card>
