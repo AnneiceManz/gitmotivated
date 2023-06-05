@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import * as ioicons from "react-icons/io5";
-import MyForm from "./Form";
-import Student from "./Student";
 
 const ListQuotes = () => {
   // this is my original state with an array of quotes
@@ -58,10 +56,11 @@ const ListQuotes = () => {
   return (
     <div className="mybody">
       <div className="list-students">
-        <h2>Techtonica Participants </h2>
+        <h2>Quote of the Day </h2>
         <ul>
           {quotes.map((quote) => {
-            return <li key={quote.q}> {quote.q}</li>;
+            <br></br>
+            return <li key={quote.q}> {`"${quote.q}"  ~${quote.a}`}</li>;
           })}
         </ul>
       </div>
