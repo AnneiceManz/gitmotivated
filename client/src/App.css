@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
 
 .App {
-  min-height: 100vh;
+  min-height: 150vh;
   margin: 5px;
   background: linear-gradient(200deg, #97C0DC, #AEBCE7, #C5E2E6, #E79BE6);
     background-size: 800% 800%;
@@ -35,18 +35,12 @@
   margin-left: 5em;
 }
 
-.Search {
-  position: absolute;
-  right: 0;
-  width: 20%;
-}
-
 .list-students {
-  width: 95%;
+  width: 90%;
   margin: auto;
   text-align: center;
   margin-top: 225px;
-  position: absolute;
+
 }
 
 .quote {
