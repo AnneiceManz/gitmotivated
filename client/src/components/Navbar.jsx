@@ -11,7 +11,7 @@ function MyNavBar(props) {
   
   const fecthQuotes = async (keyword) => {
     try {
-      const response= await axios.get(`http://localhost:8080/api/keyword/${keyword}`)
+      const response= await fetch(`http://localhost:8080/api/keyword/${keyword}`)
       const quotes = response.data[4]
       setQuotes(quotes)
     } catch (error) {
@@ -40,19 +40,7 @@ function MyNavBar(props) {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            <h3>Search by Category</h3>
-           <select>
-            <option value="success">Success</option>
-            <option value="confindence">Confidence</option>
-            <option value="future">Future</option>
-            <option value="inspiration">Inspiration</option>
-            <option value="anxiety">Anxiety</option>
-            <option value="kindness">Kindness</option>
-            <option value="work">Work</option>
-            <option value="today">Today</option>
-            <option value="excellence">Excellence</option>
-            <option value="dreams">Dreams</option>
-           </select>
+            
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
