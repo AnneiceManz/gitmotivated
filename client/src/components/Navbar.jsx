@@ -17,7 +17,6 @@ function MyNavBar(props) {
               alt="React Bootstrap logo"
             />
           </Navbar.Brand>
-          
         </Container>
       </Navbar>
     </>

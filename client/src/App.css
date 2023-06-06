@@ -30,13 +30,15 @@
   border-radius: 10px;
 }
 
-a.navbar-brand {
-  margin-inline-start: -2em;
-}
-
 .nav-link {
   color: white !important;
   margin-left: 5em;
+}
+
+.Search {
+  position: absolute;
+  right: 0;
+  width: 20%;
 }
 
 .list-students {
@@ -44,6 +46,7 @@ a.navbar-brand {
   margin: auto;
   text-align: center;
   margin-top: 225px;
+  position: absolute;
 }
 
 .quote {
