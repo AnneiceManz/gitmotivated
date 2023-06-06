@@ -20,7 +20,7 @@ const ListQuotes = () => {
       const response= await fetch(`http://localhost:8080/api/keyword/${keyword}`)
       const json = await response.json()
       console.log("dropdown",json)
-      setQuotes(json)
+      setQuotes(json.slice(0,6))
       console.log("test this response",quotes)
       // console.log("dropdown",quotes)
     } catch (error) {
