@@ -1,17 +1,35 @@
 .App {
   min-height: 100vh;
-  background-color: rgb(238, 232, 232);
   margin: 5px;
+  background: linear-gradient(200deg, #97C0DC, #AEBCE7, #C5E2E6, #E79BE6);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 77%}
+    50%{background-position:100% 24%}
+    100%{background-position:0% 77%}
 }
 
-.mybody {
-  display: flex;
-  gap: 3em;
-  padding: 1em;
+.navbar {
+  border: 5px solid #a27b8a;
+  border-radius: 10px;
 }
 
 a.navbar-brand {
-  margin-inline-start: -5em;
+  margin-inline-start: -2em;
 }
 
 .nav-link {
@@ -20,9 +38,20 @@ a.navbar-brand {
 }
 
 .list-students {
+  width: 30%;
+  margin: auto;
   text-align: center;
-  margin-top: 25px;
-  flex: 1
+  margin-top: 225px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.author {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 ul {
