@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Card, Image, Icon } from "semantic-ui-react";
+import { Card, Image, Icon, Dropdown } from "semantic-ui-react";
 
 const ListQuotes = () => {
   // this is my original state with an array of quotes
@@ -45,19 +45,21 @@ const ListQuotes = () => {
         <>
           <div className="Search">
             <h3>Search by Category</h3>
-            <select onChange={handleChange}>
-              <option>Select</option>
-              <option value="success">Success</option>
-              <option value="confidence">Confidence</option>
-              <option value="future">Future</option>
-              <option value="inspiration">Inspiration</option>
-              <option value="anxiety">Anxiety</option>
-              <option value="kindness">Kindness</option>
-              <option value="work">Work</option>
-              <option value="today">Today</option>
-              <option value="excellence">Excellence</option>
-              <option value="dreams">Dreams</option>
-            </select>
+            <Dropdown>
+              <Dropdown.Menu onChange={handleChange}>
+                <Dropdown.Item>Select</Dropdown.Item>
+                <Dropdown.Item value="success">Success</Dropdown.Item>
+                <Dropdown.Item value="confidence">Confidence</Dropdown.Item>
+                <Dropdown.Item value="future">Future</Dropdown.Item>
+                <Dropdown.Item value="inspiration">Inspiration</Dropdown.Item>
+                <Dropdown.Item value="anxiety">Anxiety</Dropdown.Item>
+                <Dropdown.Item value="kindness">Kindness</Dropdown.Item>
+                <Dropdown.Item value="work">Work</Dropdown.Item>
+                <Dropdown.Item value="today">Today</Dropdown.Item>
+                <Dropdown.Item value="excellence">Excellence</Dropdown.Item>
+                <Dropdown.Item value="dreams">Dreams</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
           <div className="list-students">
             <Card.Group centered itemsPerRow={3}>
