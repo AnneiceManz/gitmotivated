@@ -154,6 +154,20 @@ app.get("/api/keyword/today", async (req, res) => {
 
 //excellence
 
+app.get("/api/keyword/excellence", async (req, res) => {
+  try {
+    axios
+      .get(`https://zenquotes.io/api/quotes/${API_KEY}&keyword=excellence`)
+      .then((response) => {
+        console.log("response.data: ", response.data);
+        let result = response.data;
+        res.send(result);
+      });
+  } catch (error) {
+    console.log("error from catch server.js", error);
+  }
+});
+
 
 
 
