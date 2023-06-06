@@ -122,6 +122,19 @@ app.get("/api/keyword/kindness", async (req, res) => {
 
 
 //work
+app.get("/api/keyword/work", async (req, res) => {
+  try {
+    axios
+      .get(`https://zenquotes.io/api/quotes/${API_KEY}&keyword=work`)
+      .then((response) => {
+        console.log("response.data: ", response.data);
+        let result = response.data;
+        res.send(result);
+      });
+  } catch (error) {
+    console.log("error from catch server.js", error);
+  }
+});
 
 
 
