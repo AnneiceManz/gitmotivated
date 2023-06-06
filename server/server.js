@@ -136,10 +136,20 @@ app.get("/api/keyword/work", async (req, res) => {
   }
 });
 
-
-
-
 //today
+app.get("/api/keyword/today", async (req, res) => {
+  try {
+    axios
+      .get(`https://zenquotes.io/api/quotes/${API_KEY}&keyword=today`)
+      .then((response) => {
+        console.log("response.data: ", response.data);
+        let result = response.data;
+        res.send(result);
+      });
+  } catch (error) {
+    console.log("error from catch server.js", error);
+  }
+});
 
 
 //excellence
