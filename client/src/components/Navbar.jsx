@@ -19,6 +19,11 @@ function MyNavBar(props) {
     }
   }
 
+  const handleChange = (event) => {
+    const keyword = event.target.value
+    fecthQuotes(keyword)
+  }
+
   return (
     <>
     <Navbar bg="light" variant="light" sticky="top" className='navbar'>
