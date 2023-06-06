@@ -57,7 +57,7 @@ const ListQuotes = () => {
             <option value="dreams">Dreams</option>
            </select>
       <div className="list-students">
-        <Card.Group centered>
+        <Card.Group centered itemsPerRow={3}>
           { quotes.map((quote, index) => {
             return (
               <Card centered fluid raised key={`${quote.q}-${index}`}>
