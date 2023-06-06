@@ -59,7 +59,7 @@ const ListQuotes = () => {
         <h2>Quote of the Day </h2>
         <ul>
           {quotes.map((quote) => {
-            <br></br>
+            <br></br>;
             return <li key={quote.q}> {`"${quote.q}"  ~${quote.a}`}</li>;
           })}
         </ul>
