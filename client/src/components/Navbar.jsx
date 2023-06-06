@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -5,6 +6,18 @@ import Logo from '../assets/1.png'
 
 
 function MyNavBar(props) {
+
+  const [quotes, setQuotes] = useState([])
+  
+  const fecthQuotes = async (keyword) => {
+    try {
+      const response= await axios.get(`http://localhost:8080/api/keyword/${keyword}`)
+      const quotes = response.data[4]
+      setQuotes(quotes)
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
   return (
     <>
