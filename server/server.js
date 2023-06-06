@@ -89,6 +89,20 @@ app.get("/api/keyword/inspiration", async (req, res) => {
     console.log("error from catch server.js", error);
   }
 });
+//5. anxiety 
+app.get("/api/keyword/anxiety", async (req, res) => {
+  try {
+    axios
+      .get(`https://zenquotes.io/api/quotes/${API_KEY}&keyword=anxiety`)
+      .then((response) => {
+        console.log("response.data: ", response.data);
+        let result = response.data;
+        res.send(result);
+      });
+  } catch (error) {
+    console.log("error from catch server.js", error);
+  }
+});
 
 // console.log that your server is up and running
 app.listen(PORT, () => {
