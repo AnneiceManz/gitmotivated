@@ -89,7 +89,7 @@ app.get("/api/keyword/inspiration", async (req, res) => {
     console.log("error from catch server.js", error);
   }
 });
-//5. anxiety 
+//5. anxiety
 app.get("/api/keyword/anxiety", async (req, res) => {
   try {
     axios
@@ -118,8 +118,6 @@ app.get("/api/keyword/kindness", async (req, res) => {
     console.log("error from catch server.js", error);
   }
 });
-
-
 
 //7. work
 app.get("/api/keyword/work", async (req, res) => {
@@ -150,7 +148,6 @@ app.get("/api/keyword/today", async (req, res) => {
     console.log("error from catch server.js", error);
   }
 });
-
 
 //9. excellence
 
@@ -183,16 +180,6 @@ app.get("/api/keyword/dreams", async (req, res) => {
     console.log("error from catch server.js", error);
   }
 });
-
-
-
-
-
-
-
-
-
-
 
 // console.log that your server is up and running
 app.listen(PORT, () => {
