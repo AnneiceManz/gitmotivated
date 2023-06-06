@@ -168,12 +168,21 @@ app.get("/api/keyword/excellence", async (req, res) => {
   }
 });
 
-
-
-
-
-
 //dreams
+
+app.get("/api/keyword/dreams", async (req, res) => {
+  try {
+    axios
+      .get(`https://zenquotes.io/api/quotes/${API_KEY}&keyword=dreams`)
+      .then((response) => {
+        console.log("response.data: ", response.data);
+        let result = response.data;
+        res.send(result);
+      });
+  } catch (error) {
+    console.log("error from catch server.js", error);
+  }
+});
 
 
 
