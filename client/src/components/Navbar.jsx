@@ -22,7 +22,18 @@ function MyNavBar(props) {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-            Signed in as: <a href="#login">Cristina Rodriguez</a>
+           <select>
+            <option value="success">Success</option>
+            <option value="confindence">Confidence</option>
+            <option value="future">Future</option>
+            <option value="inspiration">Inspiration</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="kindness">Kindness</option>
+            <option value="work">Work</option>
+            <option value="today">Today</option>
+            <option value="excellence">Excellence</option>
+            <option value="dreams">Dreams</option>
+           </select>
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
