@@ -104,7 +104,7 @@ app.get("/api/keyword/anxiety", async (req, res) => {
   }
 });
 
-//kindness
+//6 .kindness
 app.get("/api/keyword/kindness", async (req, res) => {
   try {
     axios
@@ -121,7 +121,7 @@ app.get("/api/keyword/kindness", async (req, res) => {
 
 
 
-//work
+//7. work
 app.get("/api/keyword/work", async (req, res) => {
   try {
     axios
@@ -136,7 +136,7 @@ app.get("/api/keyword/work", async (req, res) => {
   }
 });
 
-//today
+// 8. today
 app.get("/api/keyword/today", async (req, res) => {
   try {
     axios
@@ -152,7 +152,7 @@ app.get("/api/keyword/today", async (req, res) => {
 });
 
 
-//excellence
+//9. excellence
 
 app.get("/api/keyword/excellence", async (req, res) => {
   try {
@@ -168,7 +168,7 @@ app.get("/api/keyword/excellence", async (req, res) => {
   }
 });
 
-//dreams
+//10. dreams
 
 app.get("/api/keyword/dreams", async (req, res) => {
   try {
@@ -183,10 +183,6 @@ app.get("/api/keyword/dreams", async (req, res) => {
     console.log("error from catch server.js", error);
   }
 });
-
-
-
-
 
 
 
