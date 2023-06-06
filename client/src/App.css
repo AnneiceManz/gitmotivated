@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+
 .App {
   min-height: 100vh;
   margin: 5px;
@@ -46,12 +48,19 @@ a.navbar-brand {
 
 .quote {
   font-style: italic;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: 'Noto Serif', serif;
+  line-height: 105%;
 }
 
-.author {
-  font-size: 18px;
+.quote p {
+  color: #8b5c6e;
+}
+
+.author span {
+  font-size: 22px;
   font-weight: bold;
+  color: #422c34;
 }
 
 ul {

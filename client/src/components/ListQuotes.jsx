@@ -63,8 +63,9 @@ const ListQuotes = () => {
               <Card centered fluid raised key={`${quote.q}-${index}`}>
                 <Image  src={quote.i} wrapped ui={false} />
               <Card.Content key={quote.q}>
-                <Card.Description className="quote"><Icon name="quote left"/>{`${quote.q}`}<Icon name="quote right"/></Card.Description>
-                <Card.Meta className="author">{quote.a}</Card.Meta>
+                <Card.Description className="quote"><p><Icon size="small" name="quote left"/>{`${quote.q}`}<Icon name="quote right" size="small"/></p></Card.Description>
+                <br></br>
+                <Card.Meta className="author"><span>{quote.a}</span></Card.Meta>
               </Card.Content>
         </Card>
             );
