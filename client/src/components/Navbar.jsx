@@ -22,6 +22,7 @@ function MyNavBar(props) {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
+            <h3>Search by Category</h3>
            <select>
             <option value="success">Success</option>
             <option value="confindence">Confidence</option>
