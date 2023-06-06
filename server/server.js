@@ -60,6 +60,21 @@ app.get("/api/keyword/confidence", async (req, res) => {
   }
 });
 
+//3. future
+app.get("/api/keyword/future", async (req, res) => {
+  try {
+    axios
+      .get(`https://zenquotes.io/api/quotes/${API_KEY}&keyword=future`)
+      .then((response) => {
+        console.log("response.data: ", response.data);
+        let result = response.data;
+        res.send(result);
+      });
+  } catch (error) {
+    console.log("error from catch server.js", error);
+  }
+});
+
 // console.log that your server is up and running
 app.listen(PORT, () => {
   console.log(`Backend server is running on ${PORT}`);
