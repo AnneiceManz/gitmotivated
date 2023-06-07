@@ -35,9 +35,6 @@ Introducing GitMotivated, an innovative web application designed to empower code
         <img src="https://user-images.githubusercontent.com/74997368/168977094-6a5073a2-2f48-4f5a-ae0e-ed1421a678c6.png" width="48" height="48" alt="JavaScript" />
       <br>JavaScript
     </td>
-    <td align="center" width="96">
-        <img src="https://user-images.githubusercontent.com/74997368/168976819-15a1f4e0-29cf-4ac0-94a7-1f15eee374a1.png" width="48" height="48" alt="postgreSQL" />
-      <br>postgreSQL
     </td>
     <td align="center" width="96">
         <img src="https://user-images.githubusercontent.com/74997368/168978951-5ac2af5e-c911-4e59-b493-683071cf1860.png" width="48" height="48" alt="Express" />
