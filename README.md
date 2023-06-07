@@ -16,7 +16,7 @@ Introducing GitMotivated, an innovative web application designed to empower code
 ## Authors
 
 - [mountains.stars@gmail.com](https://github.com/AnneiceManz)
-- [mifrah.malik@gmail.com]()
+- [mifrah.malik@gmail.com](https://github.com/m1frahm)
 - [rcchavez413@gmail.com ](https://github.com/raquellchavezz)
 
 ### Built With
